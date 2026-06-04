@@ -1,0 +1,2534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INHAUS — No Sleep Tonight | Liquid Coffee Concentrate</title>
+<meta name="description" content="No Sleep Tonight by INHAUS. Real brewed liquid coffee concentrate. No machine. No grinding. No waiting. 10ml makes a full café-quality cup. Ships pan India.">
+<meta name="keywords" content="INHAUS coffee, No Sleep Tonight, liquid coffee concentrate, coffee concentrate India, Chikmagalur coffee, specialty arabica">
+<meta property="og:title" content="INHAUS — No Sleep Tonight">
+<meta property="og:description" content="Real brewed liquid coffee concentrate. 10ml makes a full cup. No machine needed. Ships pan India.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --cream: #F5EFE6;
+    --peach: #F2C4A0;
+    --salmon: #E8845A;
+    --navy: #12192C;
+    --navy-mid: #1C2640;
+    --teal: #4A8B8C;
+    --off-white: #FAF7F2;
+    --charcoal: #2A2A2A;
+    --mid-grey: #888;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--off-white);
+    color: var(--charcoal);
+    overflow-x: hidden;
+  }
+
+  /* ===== NAV ===== */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 40px;
+    height: 64px;
+    background: var(--navy);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-logo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex; gap: 32px; list-style: none;
+  }
+
+  .nav-links a {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--peach); }
+
+  .nav-cta {
+    background: var(--salmon);
+    color: #fff !important;
+    padding: 8px 20px !important;
+    border-radius: 3px;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: #d4724a !important; }
+
+  .nav-cart {
+    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .nav-cart:hover { color: var(--peach); }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px;
+    background: rgba(255,255,255,0.8);
+    transition: all 0.3s;
+  }
+
+  /* ===== TICKER ===== */
+  .ticker-wrap {
+    background: var(--salmon);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    margin-top: 64px;
+  }
+
+  .ticker-track {
+    display: inline-flex;
+    animation: ticker 22s linear infinite;
+  }
+
+  .ticker-item {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 32px;
+  }
+
+  .ticker-dot {
+    color: rgba(255,255,255,0.5);
+    padding: 0 8px;
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--cream);
+    min-height: calc(100vh - 88px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 80px 80px 60px;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(242,196,160,0.4) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-left { position: relative; z-index: 2; }
+
+  .hero-eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--salmon);
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(44px, 6vw, 80px);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero-title span { color: var(--salmon); }
+
+  .hero-sub {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #555;
+    max-width: 420px;
+    margin-bottom: 36px;
+    font-weight: 300;
+  }
+
+  .hero-tags {
+    display: flex; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .hero-tag {
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--navy);
+    color: var(--navy);
+    padding: 6px 14px;
+    border-radius: 2px;
+  }
+
+  .hero-btns { display: flex; gap: 14px; align-items: center; }
+
+  .btn-primary {
+    background: var(--navy);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .btn-primary:hover { background: var(--salmon); transform: translateY(-1px); }
+
+  .btn-secondary {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 2px solid var(--navy);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .btn-secondary:hover { color: var(--salmon); border-color: var(--salmon); }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-product-showcase {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  /* Illustrated pouch cards */
+  .pouch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: end;
+  }
+
+  .pouch-card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .pouch-card:hover { transform: translateY(-8px) scale(1.02); }
+
+  .pouch-card.center { transform: scale(1.1) translateY(-10px); z-index: 2; }
+  .pouch-card.center:hover { transform: scale(1.12) translateY(-16px); }
+
+  .pouch-card-inner {
+    width: 100%;
+    aspect-ratio: 9/14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pouch-card:nth-child(1) .pouch-card-inner { background: linear-gradient(160deg, #1a2440 0%, #2d3b60 40%, #1a3040 100%); }
+  .pouch-card:nth-child(2) .pouch-card-inner { background: linear-gradient(160deg, #f5ddd0 0%, #f0c8b0 50%, #e8b898 100%); }
+  .pouch-card:nth-child(3) .pouch-card-inner { background: linear-gradient(160deg, #4a7c7e 0%, #3d6b6d 50%, #2f5a5c 100%); }
+
+  .pouch-illustration {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 65%;
+    overflow: hidden;
+  }
+
+  .pouch-illustration svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pouch-brand {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(14px, 2.5vw, 20px);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .pouch-card:nth-child(1) .pouch-brand,
+  .pouch-card:nth-child(3) .pouch-brand { color: #fff; }
+  .pouch-card:nth-child(2) .pouch-brand { color: var(--navy); }
+
+  .pouch-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(8px, 1.5vw, 12px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 2px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .pouch-card:nth-child(1) .pouch-name { color: var(--salmon); }
+  .pouch-card:nth-child(2) .pouch-name { color: var(--salmon); }
+  .pouch-card:nth-child(3) .pouch-name { color: var(--peach); }
+
+  .pouch-sub {
+    font-size: clamp(7px, 1vw, 9px);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+    position: relative;
+    z-index: 2;
+    opacity: 0.7;
+    text-align: center;
+  }
+  .pouch-card:nth-child(1) .pouch-sub,
+  .pouch-card:nth-child(3) .pouch-sub { color: rgba(255,255,255,0.7); }
+  .pouch-card:nth-child(2) .pouch-sub { color: #666; }
+
+  .hero-badge {
+    position: absolute;
+    bottom: -10px; right: -10px;
+    background: var(--salmon);
+    color: #fff;
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    animation: rotateBadge 8s linear infinite;
+    z-index: 3;
+  }
+
+  @keyframes rotateBadge {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* ===== HOW IT WORKS ===== */
+  .how-section {
+    background: var(--navy);
+    padding: 80px 80px;
+    text-align: center;
+  }
+
+  .how-eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--salmon);
+    margin-bottom: 12px;
+  }
+
+  .how-title {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .how-title span { color: var(--salmon); }
+
+  .how-sub {
+    color: rgba(255,255,255,0.55);
+    font-size: 15px;
+    margin-bottom: 64px;
+    font-weight: 300;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 28px; left: calc(16.67% + 20px); right: calc(16.67% + 20px);
+    height: 2px;
+    background: linear-gradient(90deg, var(--salmon), var(--salmon));
+    z-index: 0;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-num {
+    width: 56px; height: 56px;
+    background: var(--salmon);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .step-label {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .step-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+    max-width: 160px;
+  }
+
+  /* ===== COMPARISON ===== */
+  .compare-section {
+    background: var(--off-white);
+    padding: 100px 80px;
+  }
+
+  .compare-eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--salmon);
+    margin-bottom: 12px;
+  }
+
+  .compare-title {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 50px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    max-width: 600px;
+  }
+
+  .compare-sub {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 60px;
+    font-weight: 300;
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 820px;
+  }
+
+  .compare-card {
+    background: #fff;
+    border: 1.5px solid #E8E0D8;
+    border-radius: 4px;
+    padding: 28px 24px;
+    position: relative;
+  }
+
+  .compare-card.winner {
+    border-color: var(--salmon);
+    background: var(--navy);
+    color: #fff;
+    transform: scale(1.04);
+    box-shadow: 0 12px 40px rgba(232,132,90,0.25);
+  }
+
+  .compare-badge {
+    position: absolute;
+    top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--salmon);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .compare-icon { font-size: 20px; margin-bottom: 10px; }
+
+  .compare-brand {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mid-grey);
+    margin-bottom: 6px;
+  }
+  .compare-card.winner .compare-brand { color: var(--peach); }
+
+  .compare-price {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .compare-card.winner .compare-price { color: #fff; }
+
+  .compare-price sup { font-size: 20px; vertical-align: super; }
+
+  .compare-note {
+    font-size: 12px;
+    color: #999;
+    line-height: 1.5;
+  }
+  .compare-card.winner .compare-note { color: rgba(255,255,255,0.6); }
+
+  .compare-features {
+    margin-top: 16px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+
+  .compare-feat {
+    font-size: 12px;
+    display: flex; align-items: center; gap: 6px;
+    color: #555;
+  }
+  .compare-card.winner .compare-feat { color: rgba(255,255,255,0.8); }
+
+  .feat-check { color: #4CAF50; font-size: 14px; }
+  .feat-cross { color: #ef5350; font-size: 14px; }
+
+  /* ===== PRODUCTS ===== */
+  .products-section {
+    background: var(--cream);
+    padding: 100px 80px;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--salmon);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .section-sub {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 56px;
+    font-weight: 300;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .product-card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+
+  .product-image {
+    aspect-ratio: 4/3;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card:nth-child(1) .product-image { background: linear-gradient(135deg, #1a2440 0%, #2d4060 100%); }
+  .product-card:nth-child(2) .product-image { background: linear-gradient(135deg, #f5ddd0 0%, #e8c4a8 100%); }
+  .product-card:nth-child(3) .product-image { background: linear-gradient(135deg, #4a7c7e 0%, #2f5a5c 100%); }
+
+  .product-pouch {
+    width: 100px;
+    height: 150px;
+    border-radius: 8px 8px 4px 4px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: flex-end;
+    padding: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .product-card:nth-child(1) .product-pouch {
+    background: linear-gradient(160deg, #243050 0%, #1a2848 100%);
+  }
+  .product-card:nth-child(2) .product-pouch {
+    background: linear-gradient(160deg, #f0c8a8 0%, #e8b890 100%);
+  }
+  .product-card:nth-child(3) .product-pouch {
+    background: linear-gradient(160deg, #5a8e90 0%, #3d6b6d 100%);
+  }
+
+  .pp-brand {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .product-card:nth-child(1) .pp-brand,
+  .product-card:nth-child(3) .pp-brand { color: #fff; }
+  .product-card:nth-child(2) .pp-brand { color: var(--navy); }
+
+  .pp-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 7px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 2px;
+  }
+  .product-card:nth-child(1) .pp-name,
+  .product-card:nth-child(3) .pp-name { color: var(--salmon); }
+  .product-card:nth-child(2) .pp-name { color: var(--salmon); }
+
+  .product-mood-tag {
+    position: absolute;
+    top: 12px; left: 12px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+  .product-card:nth-child(2) .product-mood-tag { color: var(--navy); background: rgba(0,0,0,0.08); }
+
+  .product-info { padding: 20px 20px 24px; }
+
+  .product-name {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .product-tagline {
+    font-size: 12px;
+    color: var(--salmon);
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .product-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
+
+  .product-footer {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  .product-price {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--navy);
+  }
+
+  .btn-add {
+    background: var(--salmon);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+  .btn-add:hover { background: #d4724a; }
+  .btn-add:disabled, .btn-add.coming-soon {
+    background: #ccc; cursor: not-allowed; color: #888;
+  }
+
+  /* ===== WHAT IS SECTION ===== */
+  .what-section {
+    background: var(--off-white);
+    padding: 100px 80px;
+  }
+
+  .what-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .what-left .section-title { margin-bottom: 20px; }
+
+  .what-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .what-steps { margin-top: 36px; display: flex; flex-direction: column; gap: 24px; }
+
+  .what-step {
+    display: flex; gap: 20px; align-items: flex-start;
+  }
+
+  .what-step-num {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .what-step-content h4 {
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .what-step-content p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .what-right {
+    background: var(--navy);
+    border-radius: 8px;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .what-stat {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .what-stat:last-child { border-bottom: none; }
+
+  .what-stat-num {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--salmon);
+    line-height: 1;
+  }
+
+  .what-stat-label {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+  }
+
+  /* ===== WHY INHAUS ===== */
+  .why-section {
+    background: var(--navy);
+    padding: 100px 80px;
+  }
+
+  .why-section .section-title,
+  .why-section .section-eyebrow { color: #fff; }
+  .why-section .section-eyebrow { color: var(--salmon); }
+  .why-section .section-sub { color: rgba(255,255,255,0.45); }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 56px;
+    background: rgba(255,255,255,0.06);
+  }
+
+  .feature-item {
+    background: var(--navy-mid);
+    padding: 40px 32px;
+    transition: background 0.2s;
+  }
+  .feature-item:hover { background: #1f2d48; }
+
+  .feature-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .feature-title {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .feature-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ===== SPECS TABLE ===== */
+  .specs-section {
+    background: var(--cream);
+    padding: 100px 80px;
+  }
+
+  .specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .specs-table {
+    margin-top: 40px;
+    border: 1.5px solid rgba(0,0,0,0.08);
+  }
+
+  .spec-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .spec-row:last-child { border-bottom: none; }
+
+  .spec-key, .spec-val {
+    padding: 14px 20px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .spec-key {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid-grey);
+    background: rgba(0,0,0,0.02);
+    border-right: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .spec-val {
+    color: var(--charcoal);
+    font-weight: 300;
+  }
+
+  .specs-right { }
+
+  .specs-quote {
+    margin-top: 40px;
+    padding: 32px;
+    background: var(--navy);
+    border-left: 4px solid var(--salmon);
+  }
+
+  .specs-quote p {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .specs-quote cite {
+    font-size: 12px;
+    color: var(--salmon);
+    font-style: normal;
+    font-family: var(--font-display);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .comparison-table-wrap {
+    margin-top: 40px;
+    overflow: hidden;
+    border: 1.5px solid rgba(0,0,0,0.08);
+  }
+
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .comparison-table th {
+    background: var(--navy);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-align: left;
+  }
+
+  .comparison-table th:last-child { color: var(--salmon); }
+
+  .comparison-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-weight: 300;
+  }
+
+  .comparison-table tr:last-child td { border-bottom: none; }
+  .comparison-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+
+  .td-good { color: #4CAF50; font-weight: 600; }
+  .td-bad { color: #ef5350; }
+
+  /* ===== RECIPES ===== */
+  .recipes-section {
+    background: var(--off-white);
+    padding: 100px 80px;
+    overflow: hidden;
+  }
+
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  .recipe-card {
+    background: var(--navy);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .recipe-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.15); }
+
+  .recipe-img {
+    aspect-ratio: 3/4;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+  }
+
+  .recipe-img.iced-straw { background: linear-gradient(135deg, #e8607a, #c84060); }
+  .recipe-img.pista { background: linear-gradient(135deg, #6a9b6a, #4a7a4a); }
+  .recipe-img.blue { background: linear-gradient(135deg, #4060b0, #2040a0); }
+  .recipe-img.spanish { background: linear-gradient(135deg, #c86a30, #a04820); }
+  .recipe-img.vanilla { background: linear-gradient(135deg, #c8a060, #a07840); }
+  .recipe-img.mocha { background: linear-gradient(135deg, #6a3020, #4a2010); }
+  .recipe-img.caramel { background: linear-gradient(135deg, #d4a030, #a07820); }
+  .recipe-img.ameri { background: linear-gradient(135deg, #2a2a2a, #1a1a1a); }
+  .recipe-img.hazel { background: linear-gradient(135deg, #8a5828, #6a3808); }
+  .recipe-img.latte { background: linear-gradient(135deg, #c8a880, #a08860); }
+
+  .recipe-info { padding: 14px; }
+
+  .recipe-tags {
+    display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap;
+  }
+
+  .recipe-tag {
+    font-family: var(--font-display);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--salmon);
+    background: rgba(232,132,90,0.15);
+    padding: 2px 6px;
+    border-radius: 2px;
+  }
+
+  .recipe-name {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+
+  .recipe-time {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ===== REVIEWS ===== */
+  .reviews-section {
+    background: var(--navy);
+    padding: 100px 80px;
+  }
+
+  .reviews-section .section-title { color: #fff; }
+  .reviews-section .section-eyebrow { color: var(--salmon); }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .review-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 28px 24px;
+    border-radius: 4px;
+  }
+
+  .review-stars {
+    color: var(--salmon);
+    font-size: 14px;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
+
+  .review-author {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--salmon);
+  }
+
+  /* ===== FAQ ===== */
+  .faq-section {
+    background: var(--off-white);
+    padding: 100px 80px;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .faq-left .section-title { margin-bottom: 16px; }
+
+  .faq-left p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.7;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+
+  .faq-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy);
+    text-decoration: none;
+    border: 2px solid var(--navy);
+    padding: 12px 20px;
+    transition: all 0.2s;
+  }
+  .faq-contact-btn:hover {
+    background: var(--navy);
+    color: #fff;
+  }
+
+  .faq-list { display: flex; flex-direction: column; gap: 0; }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 16px;
+  }
+
+  .faq-q-text {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+
+  .faq-arrow {
+    flex-shrink: 0;
+    font-size: 18px;
+    color: var(--salmon);
+    transition: transform 0.3s;
+    font-weight: 300;
+  }
+
+  .faq-item.open .faq-arrow { transform: rotate(180deg); }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+
+  .faq-item.open .faq-answer { max-height: 300px; }
+
+  .faq-answer-inner {
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* ===== CTA BAND ===== */
+  .cta-band {
+    background: var(--salmon);
+    padding: 80px;
+    text-align: center;
+  }
+
+  .cta-band-title {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .cta-band-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 36px;
+    font-weight: 300;
+  }
+
+  .btn-white {
+    background: #fff;
+    color: var(--salmon);
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--navy);
+    padding: 60px 80px 32px;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .footer-brand h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.7;
+    font-weight: 300;
+    margin-bottom: 20px;
+    max-width: 240px;
+  }
+
+  .footer-socials { display: flex; gap: 12px; }
+
+  .footer-social {
+    width: 36px; height: 36px;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.5);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 2px;
+  }
+  .footer-social:hover {
+    border-color: var(--salmon);
+    color: var(--salmon);
+  }
+
+  .footer-col h4 {
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+  }
+
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+  .footer-col a {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 300;
+  }
+  .footer-col a:hover { color: var(--peach); }
+
+  .footer-newsletter { }
+
+  .footer-newsletter p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+
+  .newsletter-form { display: flex; }
+
+  .newsletter-input {
+    flex: 1;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-right: none;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 13px;
+    font-family: var(--font-body);
+    outline: none;
+  }
+  .newsletter-input::placeholder { color: rgba(255,255,255,0.3); }
+  .newsletter-input:focus { border-color: var(--salmon); }
+
+  .newsletter-btn {
+    background: var(--salmon);
+    border: none;
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .newsletter-btn:hover { background: #d4724a; }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    font-weight: 300;
+  }
+
+  .footer-policies {
+    display: flex; gap: 24px;
+  }
+
+  .footer-policies a {
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+    font-family: var(--font-display);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .footer-policies a:hover { color: rgba(255,255,255,0.7); }
+
+  /* ===== MOBILE NAV OVERLAY ===== */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 64px; left: 0; right: 0; bottom: 0;
+    background: var(--navy);
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  .mobile-menu.open { display: flex; }
+
+  .mobile-menu a {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--salmon); }
+
+  /* ===== SCROLL ANIMATIONS ===== */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; padding: 60px 40px; gap: 50px; }
+    .hero-right { order: -1; }
+    .how-section { padding: 60px 40px; }
+    .compare-section { padding: 60px 40px; }
+    .compare-grid { grid-template-columns: 1fr; max-width: 400px; }
+    .compare-card.winner { transform: none; }
+    .products-section { padding: 60px 40px; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+    .what-section { padding: 60px 40px; }
+    .what-grid { grid-template-columns: 1fr; gap: 40px; }
+    .why-section { padding: 60px 40px; }
+    .features-grid { grid-template-columns: 1fr 1fr; }
+    .specs-section { padding: 60px 40px; }
+    .specs-grid { grid-template-columns: 1fr; gap: 40px; }
+    .recipes-section { padding: 60px 40px; }
+    .recipes-grid { grid-template-columns: repeat(3, 1fr); }
+    .reviews-section { padding: 60px 40px; }
+    .faq-section { padding: 60px 40px; }
+    .faq-grid { grid-template-columns: 1fr; gap: 40px; }
+    .cta-band { padding: 60px 40px; }
+    footer { padding: 48px 40px 24px; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+
+  @media (max-width: 680px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero { padding: 40px 20px; }
+    .pouch-grid { gap: 8px; }
+    .hero-badge { width: 60px; height: 60px; font-size: 8px; }
+    .how-section { padding: 48px 20px; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .steps-grid::before { display: none; }
+    .compare-section { padding: 48px 20px; }
+    .products-section { padding: 48px 20px; }
+    .products-grid { grid-template-columns: 1fr; }
+    .what-section { padding: 48px 20px; }
+    .why-section { padding: 48px 20px; }
+    .features-grid { grid-template-columns: 1fr; }
+    .specs-section { padding: 48px 20px; }
+    .recipes-section { padding: 48px 20px; }
+    .recipes-grid { grid-template-columns: repeat(2, 1fr); }
+    .reviews-section { padding: 48px 20px; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .faq-section { padding: 48px 20px; }
+    .cta-band { padding: 48px 20px; }
+    footer { padding: 40px 20px 20px; }
+    .footer-top { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    .footer-policies { flex-wrap: wrap; justify-content: center; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">INHAUS</a>
+  <ul class="nav-links">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#recipes">Recipes</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="YOUR_RAZORPAY_LINK_HERE" class="nav-cta">Buy Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#shop" onclick="toggleMenu()">Shop</a>
+  <a href="#how-it-works" onclick="toggleMenu()">How It Works</a>
+  <a href="#recipes" onclick="toggleMenu()">Recipes</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="YOUR_RAZORPAY_LINK_HERE" style="color: var(--salmon);">Buy Now →</a>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">No Sleep Tonight</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">10ml Makes One Cup</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">No Machine Needed</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">Ships Pan India</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">Zero Preservatives</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">Chikmagalur Arabica</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">No Sleep Tonight</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">10ml Makes One Cup</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">No Machine Needed</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">Ships Pan India</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">Zero Preservatives</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">Chikmagalur Arabica</span><span class="ticker-dot">·</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Liquid Coffee Concentrate · Chikmagalur Arabica</p>
+    <h1 class="hero-title">
+      Same Coffee.<br>
+      Three<br>
+      <span>Stories.</span><br>
+      Which One Is You?
+    </h1>
+    <p class="hero-sub">
+      Premium liquid coffee concentrate wrapped in illustration-led storytelling. No machine. No grinding. No waiting. Just real coffee, every time.
+    </p>
+    <div class="hero-tags">
+      <span class="hero-tag">Single Origin</span>
+      <span class="hero-tag">Zero Preservatives</span>
+      <span class="hero-tag">10ml : 100ml</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#shop" class="btn-primary">Shop INHAUS</a>
+      <a href="#how-it-works" class="btn-secondary">How It Works</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-product-showcase">
+      <div class="pouch-grid">
+        <!-- Creator's Current -->
+        <div class="pouch-card">
+          <div class="pouch-card-inner">
+            <div class="pouch-illustration">
+              <svg viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg">
+                <!-- night city bg -->
+                <rect width="120" height="180" fill="#1a2440"/>
+                <!-- moon -->
+                <circle cx="90" cy="25" r="14" fill="rgba(255,220,140,0.3)"/>
+                <circle cx="96" cy="21" r="11" fill="#1a2440"/>
+                <!-- city buildings -->
+                <rect x="0" y="100" width="18" height="80" fill="#253050"/>
+                <rect x="20" y="85" width="22" height="95" fill="#1e2848"/>
+                <rect x="44" y="95" width="16" height="85" fill="#253050"/>
+                <rect x="62" y="75" width="24" height="105" fill="#1e2848"/>
+                <rect x="88" y="90" width="32" height="90" fill="#253050"/>
+                <!-- windows -->
+                <rect x="3" y="104" width="4" height="4" fill="rgba(255,220,80,0.6)"/>
+                <rect x="9" y="104" width="4" height="4" fill="rgba(255,220,80,0.3)"/>
+                <rect x="3" y="112" width="4" height="4" fill="rgba(255,220,80,0.5)"/>
+                <rect x="9" y="112" width="4" height="4" fill="rgba(255,220,80,0.4)"/>
+                <rect x="24" y="90" width="4" height="4" fill="rgba(255,220,80,0.5)"/>
+                <rect x="30" y="90" width="4" height="4" fill="rgba(255,220,80,0.6)"/>
+                <rect x="24" y="98" width="4" height="4" fill="rgba(255,220,80,0.3)"/>
+                <rect x="30" y="98" width="4" height="4" fill="rgba(255,220,80,0.5)"/>
+                <rect x="66" y="80" width="4" height="4" fill="rgba(255,220,80,0.6)"/>
+                <rect x="74" y="80" width="4" height="4" fill="rgba(255,220,80,0.4)"/>
+                <rect x="66" y="88" width="4" height="4" fill="rgba(255,220,80,0.5)"/>
+                <rect x="74" y="88" width="4" height="4" fill="rgba(255,220,80,0.3)"/>
+                <!-- desk person (creator) -->
+                <rect x="30" y="125" width="60" height="3" fill="#253050" rx="1"/>
+                <!-- monitor -->
+                <rect x="52" y="108" width="28" height="18" rx="2" fill="#0a1020"/>
+                <rect x="54" y="110" width="24" height="14" rx="1" fill="#162840"/>
+                <!-- screen glow lines -->
+                <rect x="56" y="112" width="14" height="2" rx="1" fill="rgba(100,180,255,0.6)"/>
+                <rect x="56" y="116" width="18" height="2" rx="1" fill="rgba(100,180,255,0.4)"/>
+                <rect x="56" y="120" width="10" height="2" rx="1" fill="rgba(100,180,255,0.3)"/>
+                <!-- person head -->
+                <circle cx="46" cy="116" r="7" fill="#c8905a"/>
+                <!-- headphones -->
+                <path d="M39,116 Q39,108 46,108 Q53,108 53,116" stroke="#888" stroke-width="2.5" fill="none"/>
+                <rect x="37" y="113" width="4" height="6" rx="2" fill="#555"/>
+                <rect x="51" y="113" width="4" height="6" rx="2" fill="#555"/>
+                <!-- body -->
+                <path d="M40,123 Q46,120 52,123 L50,130 L42,130 Z" fill="#1a3060"/>
+                <!-- plants -->
+                <rect x="92" y="115" width="4" height="12" fill="#6a4820"/>
+                <ellipse cx="94" cy="113" rx="8" ry="6" fill="#2a5030"/>
+                <ellipse cx="88" cy="116" rx="5" ry="4" fill="#234028"/>
+                <ellipse cx="100" cy="115" rx="5" ry="4" fill="#2a5030"/>
+                <!-- stars -->
+                <circle cx="15" cy="30" r="1.5" fill="rgba(255,255,255,0.6)"/>
+                <circle cx="35" cy="15" r="1" fill="rgba(255,255,255,0.5)"/>
+                <circle cx="55" cy="35" r="1" fill="rgba(255,255,255,0.4)"/>
+                <circle cx="75" cy="20" r="1.5" fill="rgba(255,255,255,0.5)"/>
+                <circle cx="110" cy="40" r="1" fill="rgba(255,255,255,0.6)"/>
+                <circle cx="20" cy="55" r="1" fill="rgba(255,255,255,0.3)"/>
+              </svg>
+            </div>
+            <span class="pouch-brand">INHAUS</span>
+            <span class="pouch-name">Creator's Current</span>
+            <span class="pouch-sub">Focus Blend · 250ml</span>
+          </div>
+        </div>
+
+        <!-- Daily Momentum (center) -->
+        <div class="pouch-card center">
+          <div class="pouch-card-inner">
+            <div class="pouch-illustration">
+              <svg viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg">
+                <!-- morning light bg -->
+                <rect width="120" height="180" fill="#f5ddd0"/>
+                <!-- sun rays -->
+                <circle cx="60" cy="30" r="22" fill="rgba(255,200,120,0.5)"/>
+                <circle cx="60" cy="30" r="16" fill="rgba(255,200,120,0.7)"/>
+                <!-- window frame -->
+                <rect x="10" y="40" width="100" height="80" rx="4" fill="rgba(220,190,160,0.3)" stroke="rgba(180,140,100,0.3)" stroke-width="2"/>
+                <line x1="60" y1="40" x2="60" y2="120" stroke="rgba(180,140,100,0.3)" stroke-width="2"/>
+                <line x1="10" y1="80" x2="110" y2="80" stroke="rgba(180,140,100,0.3)" stroke-width="2"/>
+                <!-- plant pot -->
+                <rect x="68" y="108" width="14" height="10" rx="2" fill="#a07840"/>
+                <rect x="65" y="105" width="20" height="4" rx="1" fill="#8a6030"/>
+                <!-- plant leaves -->
+                <ellipse cx="75" cy="100" rx="12" ry="8" fill="#4a8050" transform="rotate(-20,75,100)"/>
+                <ellipse cx="75" cy="95" rx="10" ry="7" fill="#5a9060" transform="rotate(15,75,95)"/>
+                <ellipse cx="82" cy="98" rx="8" ry="5" fill="#4a8050" transform="rotate(-10,82,98)"/>
+                <!-- person stretching -->
+                <!-- body -->
+                <ellipse cx="45" cy="108" rx="8" ry="10" fill="#d4a0d0"/>
+                <!-- head -->
+                <circle cx="45" cy="95" r="9" fill="#c8905a"/>
+                <!-- hair -->
+                <ellipse cx="45" cy="89" rx="9" ry="5" fill="#2a1a0a"/>
+                <!-- arm raised -->
+                <path d="M45,100 Q35,90 28,80" stroke="#c8905a" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <!-- other arm -->
+                <path d="M45,100 Q55,92 50,82" stroke="#c8905a" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <!-- legs -->
+                <path d="M40,118 Q38,130 36,140" stroke="#8a7090" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <path d="M50,118 Q52,130 54,140" stroke="#8a7090" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <!-- floor mat -->
+                <ellipse cx="46" cy="142" rx="24" ry="4" fill="rgba(200,160,130,0.4)"/>
+                <!-- bicycle -->
+                <circle cx="95" cy="135" r="12" fill="none" stroke="#8a6a4a" stroke-width="2.5"/>
+                <circle cx="70" cy="135" r="12" fill="none" stroke="#8a6a4a" stroke-width="2.5"/>
+                <path d="M82,123 L88,135 L95,123" fill="none" stroke="#8a6a4a" stroke-width="2"/>
+                <path d="M70,123 L76,135" fill="none" stroke="#8a6a4a" stroke-width="2"/>
+                <line x1="70" y1="123" x2="82" y2="123" stroke="#8a6a4a" stroke-width="2"/>
+                <!-- birds -->
+                <path d="M20,50 Q22,47 25,50" stroke="rgba(100,80,60,0.5)" stroke-width="1.5" fill="none"/>
+                <path d="M30,44 Q33,41 36,44" stroke="rgba(100,80,60,0.5)" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <span class="pouch-brand">INHAUS</span>
+            <span class="pouch-name">Daily Momentum</span>
+            <span class="pouch-sub">Flow Blend · 250ml</span>
+          </div>
+        </div>
+
+        <!-- Visionary -->
+        <div class="pouch-card">
+          <div class="pouch-card-inner">
+            <div class="pouch-illustration">
+              <svg viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg">
+                <!-- teal sky bg -->
+                <rect width="120" height="180" fill="#4a7c7e"/>
+                <!-- rooftop base -->
+                <rect x="0" y="130" width="120" height="50" fill="#3d6b6d"/>
+                <!-- string lights -->
+                <path d="M5,80 Q20,90 35,82 Q50,90 65,82 Q80,90 95,82 Q110,88 115,85" stroke="rgba(255,220,100,0.6)" stroke-width="1.5" fill="none"/>
+                <!-- light bulbs -->
+                <circle cx="20" cy="87" r="3" fill="rgba(255,220,100,0.8)"/>
+                <circle cx="50" cy="88" r="3" fill="rgba(255,220,100,0.8)"/>
+                <circle cx="80" cy="87" r="3" fill="rgba(255,220,100,0.8)"/>
+                <circle cx="110" cy="85" r="3" fill="rgba(255,220,100,0.8)"/>
+                <!-- glow under bulbs -->
+                <circle cx="20" cy="87" r="8" fill="rgba(255,220,100,0.1)"/>
+                <circle cx="50" cy="88" r="8" fill="rgba(255,220,100,0.1)"/>
+                <!-- city horizon -->
+                <rect x="0" y="110" width="20" height="30" fill="#2f5a5c"/>
+                <rect x="22" y="100" width="15" height="40" fill="#285254"/>
+                <rect x="85" y="105" width="18" height="35" fill="#2f5a5c"/>
+                <rect x="105" y="95" width="15" height="45" fill="#285254"/>
+                <!-- person 1 with camera -->
+                <circle cx="30" cy="110" r="7" fill="#d4a060"/>
+                <rect x="24" y="117" width="12" height="14" rx="2" fill="#e87040"/>
+                <!-- camera -->
+                <rect x="35" y="109" width="14" height="10" rx="2" fill="#2a2a2a"/>
+                <circle cx="42" cy="114" r="4" fill="#1a1a1a"/>
+                <circle cx="42" cy="114" r="2.5" fill="rgba(100,150,255,0.4)"/>
+                <!-- person 2 stretching arms -->
+                <circle cx="65" cy="105" r="7" fill="#c8805a"/>
+                <rect x="58" y="112" width="14" height="14" rx="2" fill="#4a8090"/>
+                <!-- arms wide -->
+                <path d="M58,118 L44,112" stroke="#c8805a" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M72,118 L86,112" stroke="#c8805a" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <!-- person 3 laptop -->
+                <circle cx="92" cy="112" r="7" fill="#d4a060"/>
+                <rect x="86" y="119" width="12" height="12" rx="2" fill="#5a4080"/>
+                <!-- laptop -->
+                <rect x="80" y="124" width="18" height="12" rx="1" fill="#1a1a1a"/>
+                <rect x="81" y="125" width="16" height="9" rx="1" fill="#2a3040"/>
+                <!-- table -->
+                <rect x="78" y="136" width="24" height="3" rx="1" fill="#5a4020"/>
+                <!-- plants on rooftop -->
+                <rect x="5" y="125" width="6" height="8" rx="1" fill="#6a4820"/>
+                <ellipse cx="8" cy="123" rx="8" ry="5" fill="#3a6a40"/>
+                <!-- stars -->
+                <circle cx="15" cy="30" r="1.5" fill="rgba(255,255,255,0.5)"/>
+                <circle cx="55" cy="20" r="1" fill="rgba(255,255,255,0.4)"/>
+                <circle cx="100" cy="35" r="1.5" fill="rgba(255,255,255,0.5)"/>
+                <circle cx="35" cy="50" r="1" fill="rgba(255,255,255,0.3)"/>
+              </svg>
+            </div>
+            <span class="pouch-brand">INHAUS</span>
+            <span class="pouch-name">Visionary</span>
+            <span class="pouch-sub">Vibe Blend · 250ml</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-badge">3 Sec<br>Barista</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how-it-works">
+  <p class="how-eyebrow">Dead Simple</p>
+  <h2 class="how-title">10ml. <span>That's It.</span></h2>
+  <p class="how-sub">Squeeze 10ml into cold milk. Watch it bloom. Drink a café-grade iced latte in 60 seconds.</p>
+
+  <div class="steps-grid">
+    <div class="step fade-up">
+      <div class="step-num">1</div>
+      <div class="step-label">Squeeze</div>
+      <p class="step-desc">Measure 10ml of No Sleep Tonight into your cup. Use 15ml for a bolder cup.</p>
+    </div>
+    <div class="step fade-up" style="transition-delay:0.15s">
+      <div class="step-num">2</div>
+      <div class="step-label">Add</div>
+      <p class="step-desc">Top with 90ml of hot water, cold milk, oat milk — whatever you like.</p>
+    </div>
+    <div class="step fade-up" style="transition-delay:0.3s">
+      <div class="step-num">3</div>
+      <div class="step-label">Drink</div>
+      <p class="step-desc">Give it a quick stir. For iced coffee, pour over ice. Done in under 60 seconds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare-section">
+  <p class="compare-eyebrow">The Math Is Simple</p>
+  <h2 class="compare-title">Your Last Iced Latte Cost ₹220 And Arrived Lukewarm.</h2>
+  <p class="compare-sub">INHAUS fixes both problems. Every morning.</p>
+
+  <div class="compare-grid">
+    <div class="compare-card fade-up">
+      <div class="compare-icon">📱</div>
+      <div class="compare-brand">Café Delivery App</div>
+      <div class="compare-price"><sup>₹</sup>220</div>
+      <p class="compare-note">Long wait, soggy paper cup, arrives lukewarm half the time.</p>
+      <div class="compare-features">
+        <div class="compare-feat"><span class="feat-cross">✗</span> 30–45 min wait</div>
+        <div class="compare-feat"><span class="feat-cross">✗</span> Inconsistent quality</div>
+        <div class="compare-feat"><span class="feat-cross">✗</span> Delivery fees add up</div>
+      </div>
+    </div>
+    <div class="compare-card winner fade-up" style="transition-delay:0.15s">
+      <div class="compare-badge">The Solution</div>
+      <div class="compare-icon">☕</div>
+      <div class="compare-brand">INHAUS</div>
+      <div class="compare-price"><sup>₹</sup>22</div>
+      <p class="compare-note">10 seconds. Café-grade. Ready instantly. Zero mess.</p>
+      <div class="compare-features">
+        <div class="compare-feat"><span class="feat-check">✓</span> Under 60 seconds</div>
+        <div class="compare-feat"><span class="feat-check">✓</span> Same cup every time</div>
+        <div class="compare-feat"><span class="feat-check">✓</span> No machine needed</div>
+        <div class="compare-feat"><span class="feat-check">✓</span> Zero preservatives</div>
+      </div>
+    </div>
+    <div class="compare-card fade-up" style="transition-delay:0.3s">
+      <div class="compare-icon">🧂</div>
+      <div class="compare-brand">Instant Powder</div>
+      <div class="compare-price"><sup>₹</sup>15</div>
+      <p class="compare-note">5 stirs like burnt tyres, clumps, doesn't fully dissolve.</p>
+      <div class="compare-features">
+        <div class="compare-feat"><span class="feat-cross">✗</span> Spray-dried, bitter taste</div>
+        <div class="compare-feat"><span class="feat-cross">✗</span> Clumps in cold liquid</div>
+        <div class="compare-feat"><span class="feat-cross">✗</span> No real coffee flavour</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="products-section" id="shop">
+  <p class="section-eyebrow">Pick Your Story</p>
+  <h2 class="section-title">Same Arabica.<br>Three Identities.</h2>
+  <p class="section-sub">Single-origin Chikmagalur Arabica inside every pouch. Which one are you?</p>
+
+  <div class="products-grid">
+    <div class="product-card fade-up">
+      <div class="product-image">
+        <div class="product-mood-tag">Night Owl · Focus</div>
+        <div class="product-pouch">
+          <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">
+            <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:60%;position:absolute;top:0;">
+              <rect width="100" height="150" fill="none"/>
+              <circle cx="75" cy="22" r="12" fill="rgba(255,220,140,0.25)"/>
+              <circle cx="80" cy="18" r="9" fill="#1a2440"/>
+              <rect x="5" y="80" width="15" height="70" fill="#253050"/>
+              <rect x="22" y="65" width="18" height="85" fill="#1e2848"/>
+              <rect x="55" y="58" width="20" height="92" fill="#1e2848"/>
+              <rect x="77" y="70" width="23" height="80" fill="#253050"/>
+              <rect x="8" y="84" width="3" height="3" fill="rgba(255,220,80,0.7)"/>
+              <rect x="13" y="84" width="3" height="3" fill="rgba(255,220,80,0.4)"/>
+              <rect x="8" y="90" width="3" height="3" fill="rgba(255,220,80,0.5)"/>
+              <rect x="26" y="70" width="3" height="3" fill="rgba(255,220,80,0.6)"/>
+              <rect x="32" y="70" width="3" height="3" fill="rgba(255,220,80,0.4)"/>
+              <rect x="58" y="63" width="3" height="3" fill="rgba(255,220,80,0.6)"/>
+              <rect x="64" y="63" width="3" height="3" fill="rgba(255,220,80,0.5)"/>
+              <circle cx="12" cy="25" r="1" fill="rgba(255,255,255,0.5)"/>
+              <circle cx="28" cy="12" r="1.5" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="45" cy="30" r="1" fill="rgba(255,255,255,0.3)"/>
+            </svg>
+          </div>
+          <div class="pp-brand">INHAUS</div>
+          <div class="pp-name">Creator's Current</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Creator's Current</h3>
+        <p class="product-tagline">Focus Blend</p>
+        <p class="product-desc">For the ones who do their best work after midnight. Deep focus, ambition, and city lights in a pouch.</p>
+        <div class="product-footer">
+          <span class="product-price">₹449</span>
+          <a href="YOUR_RAZORPAY_LINK_HERE" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" style="transition-delay:0.15s">
+      <div class="product-image">
+        <div class="product-mood-tag">Morning Ritual</div>
+        <div class="product-pouch">
+          <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">
+            <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:60%;position:absolute;top:0;">
+              <rect width="100" height="150" fill="none"/>
+              <circle cx="50" cy="20" r="18" fill="rgba(255,200,120,0.4)"/>
+              <rect x="10" y="40" width="80" height="60" rx="3" fill="rgba(220,190,160,0.2)" stroke="rgba(180,140,100,0.2)" stroke-width="1.5"/>
+              <line x1="50" y1="40" x2="50" y2="100" stroke="rgba(180,140,100,0.2)" stroke-width="1.5"/>
+              <line x1="10" y1="70" x2="90" y2="70" stroke="rgba(180,140,100,0.2)" stroke-width="1.5"/>
+              <circle cx="38" cy="85" r="6" fill="#c8905a"/>
+              <ellipse cx="38" cy="79" rx="6" ry="3.5" fill="#2a1a0a"/>
+              <path d="M38,91 Q30,85 24,78" stroke="#c8905a" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <rect x="32" y="91" width="12" height="11" rx="1.5" fill="#d4a0d0"/>
+              <path d="M34,102 Q32,110 30,118" stroke="#8a7090" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M42,102 Q44,110 46,118" stroke="#8a7090" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <circle cx="76" cy="112" r="9" fill="none" stroke="#8a6a4a" stroke-width="2"/>
+              <circle cx="58" cy="112" r="9" fill="none" stroke="#8a6a4a" stroke-width="2"/>
+              <path d="M67,104 L71,112 L76,104" fill="none" stroke="#8a6a4a" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="pp-brand">INHAUS</div>
+          <div class="pp-name">Daily Momentum</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Daily Momentum</h3>
+        <p class="product-tagline">Flow Blend</p>
+        <p class="product-desc">For the ones who start the day before the world wakes up. Morning clarity, balance, movement.</p>
+        <div class="product-footer">
+          <span class="product-price">₹449</span>
+          <a href="YOUR_RAZORPAY_LINK_HERE" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" style="transition-delay:0.3s">
+      <div class="product-image">
+        <div class="product-mood-tag">Creative Energy</div>
+        <div class="product-pouch">
+          <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">
+            <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:60%;position:absolute;top:0;">
+              <rect width="100" height="150" fill="none"/>
+              <rect x="0" y="100" width="100" height="50" fill="#3d6b6d"/>
+              <path d="M5,60 Q18,70 30,63 Q43,70 56,63 Q69,70 82,63 Q95,68 100,66" stroke="rgba(255,220,100,0.5)" stroke-width="1.5" fill="none"/>
+              <circle cx="18" cy="67" r="2.5" fill="rgba(255,220,100,0.8)"/>
+              <circle cx="43" cy="68" r="2.5" fill="rgba(255,220,100,0.8)"/>
+              <circle cx="68" cy="67" r="2.5" fill="rgba(255,220,100,0.8)"/>
+              <rect x="0" y="85" width="15" height="25" fill="#285254"/>
+              <rect x="17" y="78" width="12" height="32" fill="#2f5a5c"/>
+              <rect x="72" y="80" width="15" height="30" fill="#285254"/>
+              <rect x="89" y="73" width="11" height="37" fill="#2f5a5c"/>
+              <circle cx="25" cy="88" r="5.5" fill="#d4a060"/>
+              <rect x="20" y="93" width="10" height="11" rx="1.5" fill="#e87040"/>
+              <rect x="30" y="87" width="11" height="8" rx="1.5" fill="#2a2a2a"/>
+              <circle cx="35.5" cy="91" r="3" fill="#1a1a1a"/>
+              <circle cx="35.5" cy="91" r="2" fill="rgba(100,150,255,0.4)"/>
+              <circle cx="62" cy="83" r="5.5" fill="#c8805a"/>
+              <rect x="56" y="88" width="12" height="11" rx="1.5" fill="#4a8090"/>
+              <path d="M56,93 L47,89" stroke="#c8805a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M68,93 L77,89" stroke="#c8805a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <rect x="4" y="97" width="5" height="6" rx="1" fill="#6a4820"/>
+              <ellipse cx="6.5" cy="95" rx="6" ry="4" fill="#3a6a40"/>
+              <circle cx="12" cy="25" r="1.5" fill="rgba(255,255,255,0.5)"/>
+              <circle cx="46" cy="16" r="1" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="85" cy="28" r="1.5" fill="rgba(255,255,255,0.5)"/>
+            </svg>
+          </div>
+          <div class="pp-brand">INHAUS</div>
+          <div class="pp-name">Visionary</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Visionary</h3>
+        <p class="product-tagline">Vibe Blend</p>
+        <p class="product-desc">For the ones building something with their friends. Creative energy, collaboration, exploration.</p>
+        <div class="product-footer">
+          <span class="product-price">₹449</span>
+          <a href="YOUR_RAZORPAY_LINK_HERE" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS CONCENTRATE -->
+<section class="what-section" id="concentrate-education">
+  <div class="what-grid">
+    <div class="what-left">
+      <p class="section-eyebrow">New to Concentrates?</p>
+      <h2 class="section-title">What Is Liquid Coffee Concentrate?</h2>
+      <p class="what-text">
+        Liquid coffee concentrate is brewed coffee reduced to its purest, most potent form. Think of it as the essence of espresso — without the machine.
+      </p>
+      <p class="what-text">
+        Just 10ml of <em>No Sleep Tonight</em> makes a full 100ml cup. No grinding, no brewing, no waiting. It's new to India, but it's been the quiet secret of specialty cafés worldwide for years.
+      </p>
+      <div class="what-steps">
+        <div class="what-step fade-up">
+          <div class="what-step-num">1</div>
+          <div class="what-step-content">
+            <h4>Pour 10ml of No Sleep Tonight</h4>
+            <p>Use the measuring spoon included in every order. Go up to 15ml for a stronger, bolder cup.</p>
+          </div>
+        </div>
+        <div class="what-step fade-up" style="transition-delay:0.15s">
+          <div class="what-step-num">2</div>
+          <div class="what-step-content">
+            <h4>Add Your Liquid</h4>
+            <p>Top up with 90ml of hot water, cold water, cold milk, hot milk — whatever you have.</p>
+          </div>
+        </div>
+        <div class="what-step fade-up" style="transition-delay:0.3s">
+          <div class="what-step-num">3</div>
+          <div class="what-step-content">
+            <h4>Stir and Done</h4>
+            <p>Give it a quick stir. For iced coffee, pour over ice. Done in under 60 seconds. No machine, no mess.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="what-right fade-up">
+      <div class="what-stat">
+        <div class="what-stat-num">10ml</div>
+        <div class="what-stat-label">Makes one 100ml cup</div>
+      </div>
+      <div class="what-stat">
+        <div class="what-stat-num">~10</div>
+        <div class="what-stat-label">Servings per 250ml pouch</div>
+      </div>
+      <div class="what-stat">
+        <div class="what-stat-num">1 yr</div>
+        <div class="what-stat-label">Shelf life sealed</div>
+      </div>
+      <div class="what-stat">
+        <div class="what-stat-num">20 days</div>
+        <div class="what-stat-label">Once opened, refrigerated</div>
+      </div>
+      <div class="what-stat">
+        <div class="what-stat-num">0</div>
+        <div class="what-stat-label">Preservatives. Ever.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY INHAUS -->
+<section class="why-section">
+  <p class="section-eyebrow">What Makes It Different</p>
+  <h2 class="section-title">What's Inside Matters.</h2>
+  <p class="section-sub">100% Arabica beans. Proprietary extraction. Zero preservatives. 10 servings per pouch.</p>
+
+  <div class="features-grid">
+    <div class="feature-item fade-up">
+      <span class="feature-icon">🚫</span>
+      <h3 class="feature-title">Zero Preservatives</h3>
+      <p class="feature-desc">No artificial additives of any kind. Just coffee and water, as it should be. What you taste is exactly what was grown in Chikmagalur.</p>
+    </div>
+    <div class="feature-item fade-up" style="transition-delay:0.1s">
+      <span class="feature-icon">☕</span>
+      <h3 class="feature-title">Speciality Arabica</h3>
+      <p class="feature-desc">Single origin, grown at altitude. Naturally nutty and bitter-sweet with dark chocolate notes and a clean finish. Not a blend. Not a compromise.</p>
+    </div>
+    <div class="feature-item fade-up" style="transition-delay:0.2s">
+      <span class="feature-icon">⚡</span>
+      <h3 class="feature-title">3-Second Barista</h3>
+      <p class="feature-desc">Pour. Add liquid. Stir. That's it. Iced coffee in under a minute. Hot coffee in two. No machine, no training, no wait.</p>
+    </div>
+    <div class="feature-item fade-up" style="transition-delay:0.3s">
+      <span class="feature-icon">🎨</span>
+      <h3 class="feature-title">Illustration-Led Design</h3>
+      <p class="feature-desc">Each pouch is a collectible art print. The illustration is the hero — contemporary flat design with story-driven lifestyle scenes.</p>
+    </div>
+    <div class="feature-item fade-up" style="transition-delay:0.4s">
+      <span class="feature-icon">📦</span>
+      <h3 class="feature-title">Honest Packaging</h3>
+      <p class="feature-desc">Premium matte stand-up pouches. No fancy boxes. We skip the excess packaging — the savings go directly to you. Same exceptional coffee, honest price.</p>
+    </div>
+    <div class="feature-item fade-up" style="transition-delay:0.5s">
+      <span class="feature-icon">🇮🇳</span>
+      <h3 class="feature-title">Ships Pan India</h3>
+      <p class="feature-desc">Café-quality Chikmagalur coffee, delivered to your doorstep anywhere in the country. Tracking details sent once dispatched.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section class="specs-section" id="product-details">
+  <div class="specs-grid">
+    <div>
+      <p class="section-eyebrow">Product Details</p>
+      <h2 class="section-title">No Sleep Tonight</h2>
+      <p class="section-sub">Everything you need to know.</p>
+
+      <div class="specs-table">
+        <div class="spec-row"><div class="spec-key">Product</div><div class="spec-val">No Sleep Tonight — Liquid Coffee Concentrate</div></div>
+        <div class="spec-row"><div class="spec-key">Brand</div><div class="spec-val">INHAUS</div></div>
+        <div class="spec-row"><div class="spec-key">Origin</div><div class="spec-val">Chikmagalur, Karnataka</div></div>
+        <div class="spec-row"><div class="spec-key">Altitude</div><div class="spec-val">4,300 ft above sea level</div></div>
+        <div class="spec-row"><div class="spec-key">Coffee</div><div class="spec-val">Single Origin, Speciality Arabica</div></div>
+        <div class="spec-row"><div class="spec-key">Size</div><div class="spec-val">250ml (~10 servings at 100ml each)</div></div>
+        <div class="spec-row"><div class="spec-key">Ratio</div><div class="spec-val">10ml → 100ml cup</div></div>
+        <div class="spec-row"><div class="spec-key">Shelf Life</div><div class="spec-val">1 year sealed · 20 days open (refrigerated)</div></div>
+        <div class="spec-row"><div class="spec-key">Preservatives</div><div class="spec-val">None. Ever.</div></div>
+        <div class="spec-row"><div class="spec-key">In The Box</div><div class="spec-val">Concentrate pouch + 10ml measuring spoon</div></div>
+        <div class="spec-row"><div class="spec-key">Packaging</div><div class="spec-val">Premium matte stand-up pouch, soft-touch finish</div></div>
+      </div>
+    </div>
+
+    <div class="specs-right fade-up">
+      <p class="section-eyebrow">Why INHAUS vs The Rest</p>
+      <h3 class="section-title" style="font-size:clamp(22px,3vw,36px);">Better coffee.<br>Less effort.</h3>
+
+      <div class="comparison-table-wrap" style="margin-top:24px;">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Traditional Setup</th>
+              <th>INHAUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Equipment needed</td><td class="td-bad">Expensive machines</td><td class="td-good">None</td></tr>
+            <tr><td>Prep time</td><td class="td-bad">8–10 minutes</td><td class="td-good">Under 60 seconds</td></tr>
+            <tr><td>Consistency</td><td class="td-bad">Varies each time</td><td class="td-good">Same every cup</td></tr>
+            <tr><td>Shelf life</td><td class="td-bad">Weeks (beans/ground)</td><td class="td-good">1 year (sealed)</td></tr>
+            <tr><td>Preservatives</td><td class="td-bad">Often present</td><td class="td-good">Zero. Ever.</td></tr>
+            <tr><td>Cost per cup</td><td class="td-bad">₹150–220</td><td class="td-good">~₹44 per cup</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="specs-quote">
+        <p>"10 ml. One cup. Three seconds. Every time."</p>
+        <cite>— No Sleep Tonight by INHAUS</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECIPES -->
+<section class="recipes-section" id="recipes">
+  <p class="section-eyebrow">Unlock Every Mood</p>
+  <h2 class="section-title">What Can You Make?</h2>
+  <p class="section-sub">Your imagination is the limit. Here are 10 to get you started.</p>
+
+  <div class="recipes-grid">
+    <div class="recipe-card fade-up">
+      <div class="recipe-img iced-straw">🍓</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Iced</span><span class="recipe-tag">Fruity</span></div>
+        <div class="recipe-name">Iced Strawberry Latte</div>
+        <div class="recipe-time">⏱ 1 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.1s">
+      <div class="recipe-img pista">🌿</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Hot</span><span class="recipe-tag">Nutty</span></div>
+        <div class="recipe-name">Pistachio Latte</div>
+        <div class="recipe-time">⏱ 2 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.2s">
+      <div class="recipe-img blue">🫐</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Iced</span><span class="recipe-tag">Black</span></div>
+        <div class="recipe-name">Iced Blueberry Americano</div>
+        <div class="recipe-time">⏱ 1 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.3s">
+      <div class="recipe-img spanish">🥛</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Hot</span><span class="recipe-tag">Indulgent</span></div>
+        <div class="recipe-name">Spanish Latte</div>
+        <div class="recipe-time">⏱ 2 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.4s">
+      <div class="recipe-img vanilla">🍦</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Iced</span><span class="recipe-tag">Classic</span></div>
+        <div class="recipe-name">Iced Vanilla Latte</div>
+        <div class="recipe-time">⏱ 1 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up">
+      <div class="recipe-img mocha">🍫</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Hot</span><span class="recipe-tag">Comfort</span></div>
+        <div class="recipe-name">Mocha</div>
+        <div class="recipe-time">⏱ 2 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.1s">
+      <div class="recipe-img caramel">🍮</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Iced</span><span class="recipe-tag">Indulgent</span></div>
+        <div class="recipe-name">Iced Caramel Latte</div>
+        <div class="recipe-time">⏱ 1 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.2s">
+      <div class="recipe-img ameri">☕</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Hot or Iced</span></div>
+        <div class="recipe-name">Classic Americano</div>
+        <div class="recipe-time">⏱ 1 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.3s">
+      <div class="recipe-img hazel">🌰</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Iced</span><span class="recipe-tag">60 sec</span></div>
+        <div class="recipe-name">Iced Hazelnut Latte</div>
+        <div class="recipe-time">⏱ 1 min</div>
+      </div>
+    </div>
+    <div class="recipe-card fade-up" style="transition-delay:0.4s">
+      <div class="recipe-img latte">🤍</div>
+      <div class="recipe-info">
+        <div class="recipe-tags"><span class="recipe-tag">Hot</span><span class="recipe-tag">2 min</span></div>
+        <div class="recipe-name">Classic Latte</div>
+        <div class="recipe-time">⏱ 2 min</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <p class="section-eyebrow">Real People · Real Cups</p>
+  <h2 class="section-title">What They're Saying</h2>
+
+  <div class="reviews-grid">
+    <div class="review-card fade-up">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I used to spend 20 minutes making coffee every morning. Now it takes 10 seconds and tastes better than my local café."</p>
+      <div class="review-author">— Shaan M., Designer</div>
+    </div>
+    <div class="review-card fade-up" style="transition-delay:0.15s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"The Creator's Current blend is my go-to before coding sessions. The convenience is unmatched — it genuinely gets me into flow state."</p>
+      <div class="review-author">— Aditi K., Full-Stack Dev</div>
+    </div>
+    <div class="review-card fade-up" style="transition-delay:0.3s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Finally, a brand that gets it. No rustic BS, just an incredible product with beautiful packaging. The illustration on each pouch is stunning."</p>
+      <div class="review-author">— Jordan K., Photographer</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="faq-grid">
+    <div class="faq-left">
+      <p class="section-eyebrow">Got Questions?</p>
+      <h2 class="section-title">We've Got Answers.</h2>
+      <p>Everything you need to know about No Sleep Tonight and INHAUS Coffee Concentrate.</p>
+      <a href="mailto:support@inhauscofffee.com" class="faq-contact-btn">✉ Contact Us</a>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">How do I make coffee with the concentrate?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Add 10ml of No Sleep Tonight to your cup, then top with 90ml of water or milk. Stir and serve. Adjust to taste — more concentrate for a stronger cup. For iced coffee, just add ice and you're done in under 60 seconds. A 10ml measuring spoon is included with every order.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">Is this the same as instant coffee?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Not even close. Instant coffee is spray-dried or freeze-dried powder — that process strips most of the flavour and aroma. No Sleep Tonight is a brewed liquid concentrate made from specialty Arabica. It tastes like real coffee, because it is real coffee. The difference in cup quality is immediately obvious.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">Does it have any preservatives or additives?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">None. No Sleep Tonight is made purely from Speciality Arabica coffee and water. No preservatives, no artificial flavours, no additives of any kind. What you taste is exactly what was grown on the farms in Chikmagalur, Karnataka.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">What is the shelf life?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">The sealed pouch stays fresh for 1 year from manufacture. Once opened, store in a cool place (refrigeration recommended), keep it sealed, and use within 20 days for best taste. At 10ml per cup, a 250ml pouch gives you approximately 10 cups.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">Do I need any special equipment?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Nothing. No espresso machine, no French press, no filter setup. Just the concentrate, a cup, and whatever liquid you have in your kitchen. A 10ml measuring spoon is included with every order so you're ready from day one.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">Can I use it for iced coffee?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">That's where it really shines. Fill a glass with ice, pour 90ml milk of your choice, top with 10–15ml of No Sleep Tonight. Iced latte in under 60 seconds — no dilution, no bitterness. Works beautifully with oat, almond, and full-fat milk.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">Can I customise the strength?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. Our base ratio is 10ml concentrate to 90ml liquid, but experiment freely. More concentrate for a bolder cup, less for something lighter. There's no wrong answer — it's your coffee, your way.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">How does it compare to café coffee?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">No Sleep Tonight is made from the same single-origin specialty Arabica beans that specialty cafés use, brewed at the right concentration and sealed fresh. The result is a clean, nuanced cup — not the over-extracted bitterness of most home methods or the inconsistency of café delivery.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">Do you deliver across India?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes. We ship to all major cities and most pin codes across India. You'll receive tracking details once your order is dispatched. Delivery typically takes 3–5 business days depending on your location.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">What is your return or refund policy?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">If you receive a damaged or defective product, reach out to us within 48 hours of delivery with a photo and we'll make it right. Contact us via email at support@inhauscofffee.com and we'll assist you promptly. We stand behind every pouch we ship.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">What are the three blends? Are they different coffees?</span>
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Creator's Current, Daily Momentum, and Visionary are all made from the same single-origin Chikmagalur Arabica concentrate. The difference is the story — each pouch features a unique illustration designed for a different mood and moment in your day. Same great coffee, three different identities.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <h2 class="cta-band-title">Stop Ordering<br>Overpriced Coffee.</h2>
+  <p class="cta-band-sub">Start making better coffee. Right now. At home.</p>
+  <a href="YOUR_RAZORPAY_LINK_HERE" class="btn-white">Shop Now →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>INHAUS</h3>
+      <p>Real brewed liquid coffee concentrate. No machine. No grinding. No waiting. Better coffee. Less effort.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social" aria-label="Instagram">IG</a>
+        <a href="#" class="footer-social" aria-label="YouTube">YT</a>
+        <a href="https://api.whatsapp.com/send?phone=91XXXXXXXXXX&text=Hi%2C%20I%20have%20an%20inquiry%20about%20INHAUS%20Coffee." class="footer-social" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#concentrate-education">What Is Concentrate</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>New drops, recipes, and early access — straight to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="your@email.com" aria-label="Email for newsletter">
+        <button class="newsletter-btn" onclick="handleNewsletter(event)">→</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2024 INHAUS Coffee. All rights reserved.</p>
+    <div class="footer-policies">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Shipping & Returns</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ===== MOBILE MENU =====
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  // Close menu on outside click
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobileMenu');
+    const hamburger = document.getElementById('hamburger');
+    if (menu.classList.contains('open') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+
+  // ===== FAQ ACCORDION =====
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    // Open clicked if it was closed
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // ===== SCROLL ANIMATIONS =====
+  const fadeElements = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  fadeElements.forEach(el => observer.observe(el));
+
+  // ===== SMOOTH SCROLL for nav links =====
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ===== NEWSLETTER =====
+  function handleNewsletter(e) {
+    e.preventDefault();
+    const input = e.target.previousElementSibling;
+    const val = input.value.trim();
+    if (!val || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+      input.style.borderColor = '#ef5350';
+      input.placeholder = 'Enter a valid email';
+      setTimeout(() => { input.style.borderColor = ''; input.placeholder = 'your@email.com'; }, 2000);
+      return;
+    }
+    e.target.textContent = '✓';
+    e.target.style.background = '#4CAF50';
+    input.value = '';
+    input.placeholder = 'You\'re subscribed!';
+    setTimeout(() => {
+      e.target.textContent = '→';
+      e.target.style.background = '';
+      input.placeholder = 'your@email.com';
+    }, 3000);
+  }
+
+  // ===== NAV SCROLL EFFECT =====
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 20) {
+      nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.3)';
+    } else {
+      nav.style.boxShadow = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
