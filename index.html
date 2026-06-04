@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>inhause – Coffee Concentrate</title>
+  <title>inhaus - Coffee Concentrate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -297,22 +297,47 @@
     }
 
     /* ── PRODUCT SECTION ── */
-    .shop-section { background: var(--cream-dk); }
-    .shop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem; }
+    .shop-section {
+      background: var(--cream-dk);
+      padding: 0;
+    }
+    .shop-section > .section-label,
+    .shop-section > .section-title {
+      display: none;
+    }
+    .shop-grid {
+      display: grid;
+      grid-template-columns: minmax(360px, 45vw) minmax(0, 1fr);
+      gap: 0;
+      align-items: stretch;
+      margin-top: 0;
+      min-height: calc(100vh - 64px);
+    }
     .shop-image-zone {
       background: var(--brown);
-      border-radius: 4px;
-      aspect-ratio: 4/5;
+      border-radius: 0;
+      min-height: 620px;
       display: flex; align-items: center; justify-content: center;
       position: relative; overflow: hidden;
     }
-    .shop-image-placeholder {
-      font-family: var(--font-serif);
-      font-size: 7rem; font-weight: 900;
-      color: rgba(245,240,232,0.1);
-      text-align: center;
-      line-height: 1;
-      user-select: none;
+    .shop-image-zone::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 48% 36%, rgba(245,240,232,0.08) 0 20%, transparent 42%),
+        linear-gradient(120deg, rgba(255,255,255,0.04), transparent 40%);
+      pointer-events: none;
+    }
+    .shop-product-image {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: min(86%, 760px);
+      max-height: 78%;
+      object-fit: contain;
+      border-radius: 6px;
+      box-shadow: 0 28px 60px rgba(0,0,0,0.28);
     }
     .shop-image-zone .prod-label {
       position: absolute; bottom: 2rem; left: 50%;
@@ -324,14 +349,29 @@
       padding: 0.5rem 1.25rem;
       border-radius: 2px;
       white-space: nowrap;
+      z-index: 2;
     }
-    .shop-details { display: flex; flex-direction: column; gap: 1.5rem; }
+    .shop-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.6rem;
+      padding: clamp(3rem, 5vw, 6rem);
+      max-width: 820px;
+    }
+    .shop-details > .btn-primary {
+      width: 100%;
+      text-align: center;
+      padding: 1.15rem 2rem;
+      font-size: 1.05rem;
+    }
     .shop-title {
       font-family: var(--font-serif);
-      font-size: 2.5rem; font-weight: 900;
+      font-size: clamp(2.8rem, 4.8vw, 5rem); font-weight: 900;
       color: var(--brown); line-height: 1.1;
+      letter-spacing: -0.04em;
     }
-    .shop-desc { font-size: 0.95rem; line-height: 1.8; color: var(--brown-md); }
+    .shop-desc { font-size: clamp(1rem, 1.35vw, 1.45rem); line-height: 1.7; color: var(--brown-md); max-width: 34ch; }
     .shop-specs {
       display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
     }
@@ -341,7 +381,7 @@
     .size-picker { display: flex; flex-direction: column; gap: 0.75rem; }
     .size-option {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 1rem 1.25rem;
+      padding: 1.35rem 1.7rem;
       border: 1.5px solid var(--tan-lt);
       border-radius: 2px;
       cursor: pointer;
@@ -350,10 +390,10 @@
     .size-option.selected { border-color: var(--brown); background: rgba(59,35,20,0.04); }
     .size-option:hover { border-color: var(--brown-lt); }
     .size-left { display: flex; flex-direction: column; gap: 2px; }
-    .size-name { font-weight: 500; font-size: 0.95rem; color: var(--brown); }
-    .size-cups { font-size: 0.8rem; color: var(--brown-lt); }
-    .size-price { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; color: var(--brown); }
-    .size-price .orig { font-size: 0.8rem; color: var(--brown-lt); text-decoration: line-through; margin-left: 6px; font-family: var(--font-sans); font-weight: 300; }
+    .size-name { font-weight: 500; font-size: 1.25rem; color: var(--brown); }
+    .size-cups { font-size: 1rem; color: var(--brown-lt); }
+    .size-price { font-family: var(--font-serif); font-size: 1.65rem; font-weight: 700; color: var(--brown); }
+    .size-price .orig { font-size: 1rem; color: var(--brown-lt); text-decoration: line-through; margin-left: 8px; font-family: var(--font-sans); font-weight: 300; }
     .launch-badge {
       background: var(--accent);
       color: var(--white);
@@ -416,16 +456,33 @@
     .recipes-section .section-title { color: var(--cream); }
     .recipes-section .section-body { color: var(--tan-lt); }
     .recipes-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 1rem; margin-top: 3rem;
     }
     .recipe-card {
       border: 1px solid rgba(245,240,232,0.15);
-      border-radius: 4px; padding: 1.5rem;
+      border-radius: 4px;
+      padding: 0;
+      overflow: hidden;
       cursor: pointer;
       transition: background 0.2s, border-color 0.2s;
     }
     .recipe-card:hover { background: rgba(245,240,232,0.06); border-color: rgba(245,240,232,0.3); }
+    .recipe-image {
+      height: 150px;
+      position: relative;
+      overflow: hidden;
+      background: rgba(245,240,232,0.08);
+    }
+    .recipe-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+    .recipe-card:hover .recipe-image img { transform: scale(1.04); }
+    .recipe-copy { padding: 1.35rem 1.5rem 1.5rem; }
     .recipe-tag {
       font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
       color: var(--tan); margin-bottom: 0.5rem;
@@ -538,12 +595,21 @@
       .hero-left { padding: 4rem 6vw; }
       .hero-right { min-height: 40vh; }
       .how-grid { grid-template-columns: 1fr; }
-      .shop-grid { grid-template-columns: 1fr; }
+      .shop-grid { grid-template-columns: 1fr; min-height: auto; }
+      .shop-image-zone { min-height: 460px; }
+      .shop-details { padding: 4rem 6vw; }
       .b2b-inner { grid-template-columns: 1fr; }
       .b2b-actions { align-items: flex-start; flex-direction: row; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
       .nav-links { display: none; }
       section { padding: 4rem 6vw; }
+    }
+
+    @media (max-width: 560px) {
+      .shop-image-zone { min-height: 360px; }
+      .shop-specs { grid-template-columns: 1fr; }
+      .size-option { align-items: flex-start; flex-direction: column; gap: 0.75rem; }
+      .recipes-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -551,7 +617,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">in<span>haus</span>e</a>
+  <a class="nav-logo" href="#">in<span>haus</span></a>
   <ul class="nav-links">
     <li><a href="#shop">Shop</a></li>
     <li><a href="#how">How It Works</a></li>
@@ -566,7 +632,7 @@
   <div class="hero-left">
     <p class="hero-eyebrow">Speciality Coffee Concentrate</p>
     <h1 class="hero-title">Café coffee.<br /><em>At home.</em><br />In 3 seconds.</h1>
-    <p class="hero-sub">inhause brings single-origin Arabica coffee concentrate straight to your kitchen. No machine, no training, no compromise.</p>
+    <p class="hero-sub">inhaus brings single-origin Arabica coffee concentrate straight to your kitchen. No machine, no training, no compromise.</p>
     <div class="hero-badges">
       <span class="badge">Single Origin Arabica</span>
       <span class="badge">Zero Preservatives</span>
@@ -582,7 +648,7 @@
     <div class="hero-visual">
       <div class="product-card">
         <div class="product-icon"></div>
-        <div class="product-name">inhause</div>
+        <div class="product-name">inhaus</div>
         <div class="product-tagline">Coffee Concentrate</div>
       </div>
     </div>
@@ -656,12 +722,12 @@
   <h2 class="section-title">Pick your size.</h2>
   <div class="shop-grid">
     <div class="shop-image-zone">
-      <div class="shop-image-placeholder">in<br/>haus<br/>e</div>
-      <div class="prod-label">inhause Concentrate</div>
+      <img class="shop-product-image" src="product-packaging-crop.jpeg" alt="INHAUS liquid coffee concentrate product packaging">
+      <div class="prod-label">inhaus Concentrate</div>
     </div>
     <div class="shop-details">
       <div>
-        <h3 class="shop-title">inhause Coffee Concentrate</h3>
+        <h3 class="shop-title">inhaus Coffee Concentrate</h3>
         <p class="shop-desc">Single origin Arabica, brewed at peak concentration. Zero preservatives. Ships fresh across India.</p>
       </div>
       <div class="shop-specs">
@@ -712,7 +778,7 @@
 
 <!-- COMPARE -->
 <section class="compare-section">
-  <p class="section-label">Why inhause</p>
+  <p class="section-label">Why inhaus</p>
   <h2 class="section-title">Better than everything<br />else on your counter.</h2>
   <table class="compare-table">
     <thead>
@@ -720,7 +786,7 @@
         <th>Feature</th>
         <th>Instant Coffee</th>
         <th>Espresso Machine</th>
-        <th>inhause Concentrate</th>
+        <th>inhaus Concentrate</th>
       </tr>
     </thead>
     <tbody>
@@ -806,18 +872,48 @@
 <section id="recipes" class="recipes-section">
   <p class="section-label" style="color:var(--tan);">Recipes</p>
   <h2 class="section-title">Ten ways to enjoy<br />your cup.</h2>
-  <p class="section-body">From a classic americano to an iced strawberry latte — inhause works for every mood.</p>
+  <p class="section-body">From a classic americano to an iced strawberry latte — inhaus works for every mood.</p>
   <div class="recipes-grid">
-    <div class="recipe-card"><div class="recipe-tag">Iced · Fruity</div><div class="recipe-name">Iced Strawberry Latte</div><div class="recipe-time">⏱ 1 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Hot · Nutty</div><div class="recipe-name">Pistachio Latte</div><div class="recipe-time">⏱ 2 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Iced · Black</div><div class="recipe-name">Iced Blueberry Americano</div><div class="recipe-time">⏱ 1 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Hot · Indulgent</div><div class="recipe-name">Spanish Latte</div><div class="recipe-time">⏱ 2 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Iced · Classic</div><div class="recipe-name">Iced Vanilla Latte</div><div class="recipe-time">⏱ 1 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Hot · Comfort</div><div class="recipe-name">Mocha</div><div class="recipe-time">⏱ 2 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Iced · Indulgent</div><div class="recipe-name">Iced Caramel Latte</div><div class="recipe-time">⏱ 1 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Hot or Iced</div><div class="recipe-name">Classic Americano</div><div class="recipe-time">⏱ 1 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Iced · 60 sec</div><div class="recipe-name">Iced Hazelnut Latte</div><div class="recipe-time">⏱ 1 min</div></div>
-    <div class="recipe-card"><div class="recipe-tag">Hot · 2 min</div><div class="recipe-name">Classic Latte</div><div class="recipe-time">⏱ 2 min</div></div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="strawberry-latte.jpg" alt="Iced strawberry latte" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Iced · Fruity</div><div class="recipe-name">Iced Strawberry Latte</div><div class="recipe-time">1 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="pistachio-latte.jpg" alt="Pistachio latte" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Hot · Nutty</div><div class="recipe-name">Pistachio Latte</div><div class="recipe-time">2 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="blueberry-americano.jpg" alt="Iced blueberry americano" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Iced · Black</div><div class="recipe-name">Iced Blueberry Americano</div><div class="recipe-time">1 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="spanish-latte.jpg" alt="Spanish latte" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Hot · Indulgent</div><div class="recipe-name">Spanish Latte</div><div class="recipe-time">2 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="vanilla-latte.jpg" alt="Iced vanilla latte" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Iced · Classic</div><div class="recipe-name">Iced Vanilla Latte</div><div class="recipe-time">1 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="mocha.jpg" alt="Mocha" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Hot · Comfort</div><div class="recipe-name">Mocha</div><div class="recipe-time">2 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="caramel-latte.jpg" alt="Iced caramel latte" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Iced · Indulgent</div><div class="recipe-name">Iced Caramel Latte</div><div class="recipe-time">1 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="americano.jpg" alt="Classic americano" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Hot or Iced</div><div class="recipe-name">Classic Americano</div><div class="recipe-time">1 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="hazelnut-latte.jpg" alt="Iced hazelnut latte" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Iced · 60 sec</div><div class="recipe-name">Iced Hazelnut Latte</div><div class="recipe-time">1 min</div></div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image"><img src="classic-latte.jpg" alt="Classic latte" loading="lazy"></div>
+      <div class="recipe-copy"><div class="recipe-tag">Hot · 2 min</div><div class="recipe-name">Classic Latte</div><div class="recipe-time">2 min</div></div>
+    </div>
   </div>
 </section>
 
@@ -828,7 +924,7 @@
   <div class="faq-list" id="faqList">
     <div class="faq-item">
       <button class="faq-q">Is this the same as instant coffee? <span class="faq-arrow">↓</span></button>
-      <div class="faq-a">Not even close. Instant coffee is spray-dried or freeze-dried powder — the process strips most of the flavour and aroma. inhause is brewed liquid concentrate made from speciality Arabica. It tastes like real coffee, because it is real coffee.</div>
+      <div class="faq-a">Not even close. Instant coffee is spray-dried or freeze-dried powder — the process strips most of the flavour and aroma. inhaus is brewed liquid concentrate made from speciality Arabica. It tastes like real coffee, because it is real coffee.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">Do I need any special equipment? <span class="faq-arrow">↓</span></button>
@@ -844,7 +940,7 @@
     </div>
     <div class="faq-item">
       <button class="faq-q">Does it have any preservatives or additives? <span class="faq-arrow">↓</span></button>
-      <div class="faq-a">None. inhause is made purely from Speciality Arabica coffee and water. No preservatives, no artificial flavours, no additives of any kind. What you taste is exactly what was brewed.</div>
+      <div class="faq-a">None. inhaus is made purely from Speciality Arabica coffee and water. No preservatives, no artificial flavours, no additives of any kind. What you taste is exactly what was brewed.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">Do you deliver across India? <span class="faq-arrow">↓</span></button>
@@ -863,8 +959,8 @@
       <p class="b2b-body">Low MOQs, ready-to-label pouches, high margins. Whether you're a café, bar, marketplace, or looking for a white label solution, we're ready to partner.</p>
     </div>
     <div class="b2b-actions">
-      <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C+I+have+a+B2B+enquiry+for+inhause." class="btn-cream" target="_blank">WhatsApp Us</a>
-      <a href="mailto:hello@inhause.in" class="btn-ghost">Email Us</a>
+      <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C+I+have+a+B2B+enquiry+for+inhaus." class="btn-cream" target="_blank">WhatsApp Us</a>
+      <a href="mailto:inhauscoffee@gmail.com" class="btn-ghost">Email Us</a>
     </div>
   </div>
 </section>
@@ -873,7 +969,7 @@
 <footer>
   <div class="footer-grid">
     <div>
-      <div class="footer-brand-name">in<span>haus</span>e</div>
+      <div class="footer-brand-name">in<span>haus</span></div>
       <p class="footer-tagline">Speciality coffee concentrate. No machine, no mess, no compromise.</p>
     </div>
     <div>
@@ -896,7 +992,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 inhause. All rights reserved.</span>
+    <span>© 2026 inhaus. All rights reserved.</span>
     <span>Made with ☕ in India</span>
   </div>
 </footer>
